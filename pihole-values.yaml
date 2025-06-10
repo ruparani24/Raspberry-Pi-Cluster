@@ -1,0 +1,10 @@
+# Helm values for Pi-hole
+DNS1: "8.8.8.8"
+DNS2: "8.8.4.4"
+WEBPASSWORD: "changeme"
+service:
+  web:
+    type: NodePort
+    nodePort: 31771
+  dns:
+    type: ClusterIP
